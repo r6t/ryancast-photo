@@ -17,14 +17,13 @@ jobs:
           tool: zola@0.17.2
       - name: Build
         run: zola build
-        with:
-          submodules: true
-          fetch-depth: 0
       - uses: reggionick/s3-deploy@v4
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
+          submodules: true
+          fetch-depth: 0
           folder: public
           bucket: ${{ secrets.GALLERY_S3_BUCKET }}
           private: true
