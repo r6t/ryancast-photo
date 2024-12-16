@@ -1,5 +1,9 @@
 +++
-title = "Gallery r6"
-description = "Gallery r6"
-sort_by = "date"
+title = "Ryan Cast Photography"
+description = "Ryan Cast Photography"
+sort_by = "none"
+
+[extra]
+
+gallery_paths = ["artwork"]
 +++

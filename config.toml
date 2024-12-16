@@ -16,10 +16,13 @@ taxonomies = [
 [extra]
 menu = [
     {url = "atom.xml", name = "RSS Feed"},
-    {url = "https://ryancast.com", name = "Contact"},
+    {url = "/shop", name = "Buy Photos"},
+    {url = "/about", name = "About"},
 ]
 
+
 theme_color = "#313131" # color for browser
+# theme_color = "#142530" # cascade shale color for browser
 
 author_url = "https://ryancast.com"
 cover_image = "img/cover.webp" # cover image on main gallery pages for opengraph and twitter embeds 
